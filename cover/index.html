@@ -166,23 +166,55 @@
   </header>
 
   <main class="px-3">
-    <h1>Formulario de resgistro.</h1>
-    <form action='procesar_inscripciones.php'method="POST">
-     <input type="text" name="txt_nombre"placeholder="Escriba su nombre" class="form-control"/>
-     <input type="text" name="txt_apellidos"placeholder="Escriba su apellido" class="form-control"/>
-     <label> selecciona su fecha de nacimiento </label>
+     <label> Basicos</label>
+     <form action='procesar_inscripciones.php'method="POST"></form>
+     <select name="tipo de identificacion" class="form-control" required>
+     <option value="">Tipo de identificacion </option>
+    <option value="cc">Cedula de cuidadania</option>
+    <option value="ti">Tarjeta de identidad</option>
+    <option value="ce">Cedula extranjera</option>
+     <input type="text" name="txt_identificacion"placeholder="Escriba su identificacion" class="form-control"/>
+     <label> Seleccione su fecha de nacimiento </label>
      <input type="date" name="txt_fnacimiento" class="form-control"/>
-     <input type="email" name="txt_correo"placeholder="Escriba su correo" class="form-control"/>
-     <input type="tel" name="txt_telefono"placeholder="Escriba su telefono" class="form-control"/>
-     <label> selecciona su sexo </label>
-     <br>
-     <input type="radio" name="sexo" value="m"/> <label>masculino</label>
-     <input type="radio" name="sexo" value="f"/> <label>femenino</label>
-     <select name="sexo" class="form-control" required>
-    <option value="">selecciona tu sexo</option>
+     <input type="tetx" name="txt_apellidos"placeholder="Primer apellido" class="form-control"/>
+     <input type="tetx" name="txt_apellidos"placeholder="Segundo apellido" class="form-control"/>
+     <input type="tetx" name="txt_nombres"placeholder="Primer nombre" class="form-control"/>
+     <input type="tetx" name="txt_nombres"placeholder="Segundo nombre" class="form-control"/>
+     <select name="Genero" class="form-control" required>
+     <option value="">Genero</option>
     <option value="f">fenemino</option>
     <option value="m">masculino</option>
-     <input type="submit" value="Guardar"class="form-control"name="btn_guardar">
+    <input type="tetx" name="txt_lugar_expedicion"placeholder="Lugar de expendicion del documento" class="form-control"/>
+    <select name="estado_civil" class="form-control" required>
+      <option value="">Estado civil</option>
+      <option value="c">Casado</option>
+      <option value="s">Soltero</option>
+      <option value="v">Viudo</option>
+      <option value="d">Divorciado</option>
+      <input type="tetx" name="txt_lugar_nacimiento"placeholder="Lugar de nacimiento" class="form-control"/>
+      <select name="nacionalidad" class="form-control" required>
+      <option value="n">Nacionalidad</option>
+      <option value="c">Colombiano</option>
+      <input type="tetx" name="txt_npasaporte"placeholder="Numero de pasaporte" class="form-control"/>
+      <label> Generales </label>
+      <input type="tetx" name="txt_lresidencia"placeholder="Lugar de residencia" class="form-control"/>
+      <input type="tetx" name="txt_dresidencia"placeholder="Direccion de residencia" class="form-control"/>
+      <input type="tetx" name="txt_dod_pais"placeholder="Cod. pais" class="form-control"/>
+     <input type="tel" name="txt_telefono"placeholder="Escriba su telefono" class="form-control"/>
+     <input type="email" name="txt_correo"placeholder="Correo electronico institucional" class="form-control"/>
+     <input type="email" name="txt_correo"placeholder="Correo electronico personal" class="form-control"/>
+     <label> Adicionales </label> 
+     <input type="tetx" name="txt_e_economico"placeholder="Estrato economico" class="form-control"/>
+     <input type="text" name="txt_d_militar"placeholder="Distrito militar"class="form-control"/>
+     <label> Redes sociales</label>
+     <input type="text" name="txt_facebook" placeholder="Facebook"class="form-control"/>
+     <input type="text" name="txt_linkedln" placeholder="Linkedln"class="form-control"/>
+     <input type="text" name="txt_WhatsApp" placeholder="WhatsApp" class="form-control"/>
+     <br>
+    
+
+    
+     <input type="submit" value="Actualizar"class="form-control"name="btn_Actualizar">
 
   </form>  
   
